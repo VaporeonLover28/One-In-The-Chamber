@@ -1,40 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://dgc15gaw6jjiv"]
+[gd_scene load_steps=19 format=3 uid="uid://dgc15gaw6jjiv"]
 
 [ext_resource type="Texture2D" uid="uid://b8i6xwaufcyvr" path="res://logo fueda.png" id="1_w4ep1"]
 [ext_resource type="Script" path="res://menu.gd" id="1_x5ema"]
 [ext_resource type="Texture2D" uid="uid://86at1425vc1o" path="res://butaum.png" id="3_xtxkc"]
 [ext_resource type="Texture2D" uid="uid://bj1bo10kksid4" path="res://butaumapertado.png" id="4_jy7gr"]
 [ext_resource type="Texture2D" uid="uid://71sg1hcbd4ly" path="res://butaumselecionado.png" id="5_yxpid"]
-
-[sub_resource type="Animation" id="Animation_u1qv2"]
-resource_name = "menu"
-length = 2.0
-loop_mode = 1
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("LogoFueda:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(3, 3), Vector2(3.75, 3.75), Vector2(3, 3), Vector2(3.75, 3.75), Vector2(3, 3)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("LogoFueda:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, 0.261799, 0.0, -0.261799, 0.0]
-}
+[ext_resource type="Texture2D" uid="uid://c2txh15f7ukfo" path="res://butaum2.png" id="6_gmu2f"]
+[ext_resource type="Texture2D" uid="uid://bhelw5nikvcgn" path="res://butaum2apertado.png" id="7_jb0p3"]
+[ext_resource type="Texture2D" uid="uid://dfs57ntbol8eb" path="res://butaum2selecionado.png" id="8_jurjk"]
+[ext_resource type="Texture2D" uid="uid://bojfuh2ir7bm6" path="res://butaum3.png" id="9_87iyp"]
+[ext_resource type="Texture2D" uid="uid://b1316re07h8fv" path="res://butaum3apertado.png" id="10_xc7it"]
+[ext_resource type="Texture2D" uid="uid://c1viu1xu85j6y" path="res://butaum3selecionado.png" id="11_to0wv"]
+[ext_resource type="Texture2D" uid="uid://d1lt7gnqau6k7" path="res://cuadado.png" id="12_c3jbu"]
+[ext_resource type="Texture2D" uid="uid://bdpd2cvtpcacd" path="res://godot.png" id="13_majuq"]
 
 [sub_resource type="Animation" id="Animation_bl67y"]
 length = 0.001
@@ -74,10 +52,71 @@ tracks/2/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("godotleft:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(286.251, 322.453)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("godotright:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(868.016, 322.457)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("godotleft:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("black:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("black:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(556, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_cs0iw"]
 resource_name = "intro"
-length = 0.5
+length = 1.5
+step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -85,15 +124,159 @@ tracks/0/path = NodePath("LogoFueda:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.983333, 1.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plei:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.983333, 1.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("opissoes:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 1.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cuite:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1, 1.46667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("godotleft:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(286.251, 322.453), Vector2(-299, 322.453)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("godotright:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(868.016, 322.457), Vector2(1450, 322.457)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("godotleft:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("godotright:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_u1qv2"]
+resource_name = "menu"
+length = 3.0
+loop_mode = 1
+step = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LogoFueda:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.75, 1.5, 2.25, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3, 3), Vector2(3.75, 3.75), Vector2(3, 3), Vector2(3.75, 3.75), Vector2(3, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LogoFueda:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.75, 1.5, 2.25, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.261799, 0.0, -0.261799, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_7nbtj"]
+resource_name = "change"
+length = 0.5
+step = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("black:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+"values": [Vector2(1, 1), Vector2(30, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("black:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(556, 0), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bws58"]
 _data = {
 "RESET": SubResource("Animation_bl67y"),
+"change": SubResource("Animation_7nbtj"),
 "intro": SubResource("Animation_cs0iw"),
 "menu": SubResource("Animation_u1qv2")
 }
@@ -109,19 +292,19 @@ autoplay = "intro"
 
 [node name="red" type="ColorRect" parent="."]
 offset_right = 576.0
-offset_bottom = 648.0
+offset_bottom = 691.0
 color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
 
 [node name="blue" type="ColorRect" parent="."]
 offset_left = 576.0
 offset_right = 1152.0
-offset_bottom = 648.0
+offset_bottom = 691.0
 color = Color(0, 0.352941, 1, 1)
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="black" type="ColorRect" parent="."]
 offset_left = 556.0
 offset_right = 596.0
-offset_bottom = 648.0
+offset_bottom = 691.0
 color = Color(0, 0, 0, 1)
 
 [node name="LogoFueda" type="Sprite2D" parent="."]
@@ -131,6 +314,7 @@ scale = Vector2(3, 3)
 texture = ExtResource("1_w4ep1")
 
 [node name="plei" type="TextureButton" parent="."]
+modulate = Color(1, 1, 1, 0)
 offset_left = 528.0
 offset_top = 393.0
 offset_right = 592.0
@@ -140,4 +324,51 @@ texture_normal = ExtResource("3_xtxkc")
 texture_pressed = ExtResource("4_jy7gr")
 texture_hover = ExtResource("5_yxpid")
 
+[node name="opissoes" type="TextureButton" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 361.0
+offset_top = 393.0
+offset_right = 425.0
+offset_bottom = 457.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("6_gmu2f")
+texture_pressed = ExtResource("7_jb0p3")
+texture_hover = ExtResource("8_jurjk")
+
+[node name="cuite" type="TextureButton" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 695.0
+offset_top = 393.0
+offset_right = 759.0
+offset_bottom = 457.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("9_87iyp")
+texture_pressed = ExtResource("10_xc7it")
+texture_hover = ExtResource("11_to0wv")
+
+[node name="godotleft" type="Sprite2D" parent="."]
+clip_children = 2
+position = Vector2(286.251, 322.453)
+scale = Vector2(1.01, 1.01)
+texture = ExtResource("12_c3jbu")
+
+[node name="godotlefttext" type="Sprite2D" parent="godotleft"]
+position = Vector2(288, 0.5)
+scale = Vector2(1, 1.00155)
+texture = ExtResource("13_majuq")
+
+[node name="godotright" type="Sprite2D" parent="."]
+visible = false
+clip_children = 2
+position = Vector2(868.016, 322.457)
+scale = Vector2(1.01, 1.01)
+texture = ExtResource("12_c3jbu")
+
+[node name="godotrighttext" type="Sprite2D" parent="godotright"]
+position = Vector2(-288, 0.5)
+scale = Vector2(1, 1.00155)
+texture = ExtResource("13_majuq")
+
 [connection signal="button_up" from="plei" to="." method="_on_plei_button_up"]
+[connection signal="button_up" from="opissoes" to="." method="_on_opissoes_button_up"]
+[connection signal="button_up" from="cuite" to="." method="_on_cuite_button_up"]

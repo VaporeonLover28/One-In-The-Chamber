@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b1n3fivmwvu7o"]
+
+[ext_resource type="FontFile" uid="uid://5okrbl2le27c" path="res://RevMiniPixel.ttf" id="1_uvetc"]
+
+[resource]
+default_font = ExtResource("1_uvetc")
+default_font_size = 12
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_uvetc")

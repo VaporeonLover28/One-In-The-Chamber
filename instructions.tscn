@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7uynctsmmtpy"]
+
+[ext_resource type="Texture2D" uid="uid://cksux75oqfxs1" path="res://instructions.png" id="1_d1upa"]
+[ext_resource type="Theme" uid="uid://b1n3fivmwvu7o" path="res://fontpixel_theme.tres" id="2_pw3pg"]
+
+[node name="instructions" type="Node2D"]
+metadata/_edit_vertical_guides_ = [576.0]
+metadata/_edit_horizontal_guides_ = [324.0]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_d1upa")
+
+[node name="OICI" type="Label" parent="."]
+offset_left = 448.0
+offset_top = 70.0
+offset_right = 688.0
+offset_bottom = 121.0
+size_flags_horizontal = 4
+theme = ExtResource("2_pw3pg")
+text = "One In The Chamber:
+Instructions"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="inst1" type="RichTextLabel" parent="."]
+offset_left = 188.0
+offset_top = 137.0
+offset_right = 967.0
+offset_bottom = 294.0
+theme = ExtResource("2_pw3pg")
+theme_override_font_sizes/normal_font_size = 16
+text = "apt apt apt apt apt apt uh uhuh uhuh apt apt apt apt apt apt uh uhuh uhuh apt apt apt apt apt apt uh uhuh uhuh apt apt apt apt apt apt uh uhuh uhuh "
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+visible_characters_behavior = 1
+
+[node name="anim" type="AnimationPlayer" parent="."]
