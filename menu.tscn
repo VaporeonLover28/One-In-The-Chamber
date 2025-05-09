@@ -112,6 +112,47 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector2(556, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("plei:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_7nbtj"]
+resource_name = "change"
+length = 0.5
+step = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("black:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(30, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("black:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(556, 0), Vector2(0, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_cs0iw"]
 resource_name = "intro"
@@ -124,7 +165,7 @@ tracks/0/path = NodePath("LogoFueda:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.983333, 1.46667),
+"times": PackedFloat32Array(0, 0.983333, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -136,7 +177,7 @@ tracks/1/path = NodePath("plei:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.983333, 1.46667),
+"times": PackedFloat32Array(0, 0.983333, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -148,7 +189,7 @@ tracks/2/path = NodePath("opissoes:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1, 1.46667),
+"times": PackedFloat32Array(0, 1, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -160,7 +201,7 @@ tracks/3/path = NodePath("cuite:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 1, 1.46667),
+"times": PackedFloat32Array(0, 1, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -213,6 +254,42 @@ tracks/7/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("plei:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("opissoes:disabled")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("cuite:disabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
 [sub_resource type="Animation" id="Animation_u1qv2"]
 resource_name = "menu"
@@ -244,35 +321,6 @@ tracks/1/keys = {
 "values": [0.0, 0.261799, 0.0, -0.261799, 0.0]
 }
 
-[sub_resource type="Animation" id="Animation_7nbtj"]
-resource_name = "change"
-length = 0.5
-step = 0.15
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("black:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(30, 30)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("black:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(556, 0), Vector2(0, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bws58"]
 _data = {
 "RESET": SubResource("Animation_bl67y"),
@@ -293,19 +341,19 @@ autoplay = "intro"
 [node name="red" type="ColorRect" parent="."]
 offset_right = 576.0
 offset_bottom = 691.0
-color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
+color = Color(0.630072, 0.00786781, 0.171415, 1)
 
 [node name="blue" type="ColorRect" parent="."]
 offset_left = 576.0
 offset_right = 1152.0
 offset_bottom = 691.0
-color = Color(0, 0.352941, 1, 1)
+color = Color(0.183959, 0.424792, 0.784257, 1)
 
 [node name="black" type="ColorRect" parent="."]
 offset_left = 556.0
 offset_right = 596.0
 offset_bottom = 691.0
-color = Color(0, 0, 0, 1)
+color = Color(0.301961, 0.301961, 0.301961, 1)
 
 [node name="LogoFueda" type="Sprite2D" parent="."]
 z_index = 5
@@ -320,6 +368,7 @@ offset_top = 393.0
 offset_right = 592.0
 offset_bottom = 457.0
 scale = Vector2(1.5, 1.5)
+disabled = true
 texture_normal = ExtResource("3_xtxkc")
 texture_pressed = ExtResource("4_jy7gr")
 texture_hover = ExtResource("5_yxpid")
@@ -331,6 +380,7 @@ offset_top = 393.0
 offset_right = 425.0
 offset_bottom = 457.0
 scale = Vector2(1.5, 1.5)
+disabled = true
 texture_normal = ExtResource("6_gmu2f")
 texture_pressed = ExtResource("7_jb0p3")
 texture_hover = ExtResource("8_jurjk")
@@ -342,6 +392,7 @@ offset_top = 393.0
 offset_right = 759.0
 offset_bottom = 457.0
 scale = Vector2(1.5, 1.5)
+disabled = true
 texture_normal = ExtResource("9_87iyp")
 texture_pressed = ExtResource("10_xc7it")
 texture_hover = ExtResource("11_to0wv")

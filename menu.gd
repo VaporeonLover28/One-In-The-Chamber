@@ -14,4 +14,7 @@ func _on_opissoes_button_up() -> void:
 	pass # Replace with function body.
 
 func _on_cuite_button_up() -> void:
+	$black.z_index = 10
+	$anim.play("change")
+	await get_tree().create_timer(0.5).timeout
 	get_tree().quit()

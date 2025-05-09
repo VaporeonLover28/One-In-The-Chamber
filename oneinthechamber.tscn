@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://c28wrxyq1glhd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kurnx"]
+sky_top_color = Color(0.65505, 0.365533, 0, 1)
+sky_horizon_color = Color(0.654902, 0.364706, 0, 1)
+ground_bottom_color = Color(0.621241, 0.277872, 0, 1)
+ground_horizon_color = Color(0.654902, 0.364706, 0, 1)
+ground_curve = 0.169619
+
+[sub_resource type="Sky" id="Sky_irpo5"]
+sky_material = SubResource("ProceduralSkyMaterial_kurnx")
+
+[sub_resource type="Environment" id="Environment_rqu8p"]
+background_mode = 2
+sky = SubResource("Sky_irpo5")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xkqsc"]
+size = Vector2(11, 10)
+
+[node name="oneinthechamber" type="Node3D"]
+
+[node name="sky" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rqu8p")
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_color = Color(0.907283, 0.622549, 7.70092e-07, 1)
+shadow_enabled = true
+
+[node name="chao" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_xkqsc")
